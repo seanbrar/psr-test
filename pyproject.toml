@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "psr-test-project"
+version = "0.0.0"
+
+[project.optional-dependencies]
+dev = ["python-semantic-release>=9.21.1", "build"]
+
+[tool.semantic_release]
+version_source = "tag"
+version_toml = ["pyproject.toml:project.version"]
+version_variables = ["src/psr_test_project/__init__.py:__version__"]
+build_command = false
+tag_format = "v{version}"
+
+[tool.semantic_release.branches.main]
+match = "main"
+prerelease = false
