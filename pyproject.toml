@@ -13,7 +13,7 @@ dev = ["python-semantic-release>=9.21.1", "build"]
 version_source = "tag"
 version_toml = ["pyproject.toml:project.version"]
 version_variables = ["src/psr_test_project/__init__.py:__version__"]
-build_command = false
+build_command = ""
 tag_format = "v{version}"
 
 [tool.semantic_release.branches.main]
