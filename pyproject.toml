@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "psr-test-project"
-version = "0.0.0"
+version = "0.1.1"
 
 [project.optional-dependencies]
 dev = ["python-semantic-release>=9.21.1", "build"]
